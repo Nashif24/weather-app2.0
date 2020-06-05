@@ -25,7 +25,7 @@ and in the if statement, it accepts if the user enters a city and country, else 
 		e.preventDefault();
 		try{
 					/*To fetch the contents for the weather, I used the openweathermap api, the api works using async/await which makes it easy to return the data*/
-		const api_get = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=773dbee29c691dd7acf10c49b8363e5a&units=metric`);
+		const api_get = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=REACT_APP_ID&units=metric`);
 		const response = await api_get.json();
 		if(city && country){
 			this.setState({
